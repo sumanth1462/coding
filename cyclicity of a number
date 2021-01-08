@@ -8,8 +8,16 @@ while(i<10):
 print(l)
 c=1
 for i in range(1,len(l)):
-    if(l[0]==l[i][-1]):
-        break
-    else:
-        c=c+1
+    if(a<=9):
+        if(l[0]==l[i][-1]):
+            print(l[0],l[i][-1],i)
+            break
+        else:
+            c=c+1
+    elif(a>9):
+        if(l[0][-1]==l[i][-1]):
+            print(l[0][-1],l[i][-1],i)
+            break
+        else:
+            c=c+1
 print(c)
